@@ -35,23 +35,11 @@
 // var filesList = [];
 // readFileList(path.join(__dirname, "../blogs"), filesList);
 
-
-// 获取命令行参数
-const args = process.argv;
-let baseUrl = '/'
-
-// 查找 "--github" 参数
-const githubArgIndex = args.indexOf("--github");
-
-if (githubArgIndex !== -1) {
-  // 存在 "--github" 参数
-  baseUrl = '/lijun.github.io/' // github上设置的路径
-}
 module.exports = {
   title: "lijun's blog",
   description: "A simple and beautiful vuepress blog theme .",
   dest: "public",
-  base: baseUrl, 
+  base: '/lijun.github.io/', 
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     [

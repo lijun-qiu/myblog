@@ -14,7 +14,7 @@ git push -f git@github.com:lijun-qiu/myblog.git master
 
 
 # 生成静态文件
-npm run build --github
+npm run build
 
 # 进入生成的文件夹
 cd public
