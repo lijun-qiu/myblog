@@ -39,7 +39,7 @@ module.exports = {
   title: "lijun's blog",
   description: "A simple and beautiful vuepress blog theme .",
   dest: "public",
-  base: "/lijun.github.io/", //github上设置的路径
+  // base: "/lijun.github.io/", //github上设置的路径
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     [
