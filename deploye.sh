@@ -6,7 +6,7 @@ set -e
 git status
 git add .
 git status
-git commit -m '修改服务器'
+git commit -m 'github'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:lijun-qiu/myblog.git master
