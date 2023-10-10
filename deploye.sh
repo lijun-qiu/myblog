@@ -9,7 +9,7 @@ git status
 git commit -m '第四次分享'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@gitee.com:qlijn/my-blog.git master
+git push -f git@github.com:lijun-qiu/myblog.git master
 
 
 

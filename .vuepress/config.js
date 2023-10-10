@@ -73,12 +73,12 @@ module.exports = {
         
       },
       {
-        text: "Gitee",
+        text: "GitHub",
         icon: "reco-message",
         items: [
           {
-            text: "Gitee",
-            link: "https://gitee.com/qlijn/my-blog",
+            text: "GitHub",
+            link: "https://github.com/lijun-qiu/myblog",
             icon: "reco-github",
           },
         ],
