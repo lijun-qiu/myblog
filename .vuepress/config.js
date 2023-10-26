@@ -103,6 +103,7 @@ module.exports = {
           children: [
             ['/blogs/js/优化/图片懒加载.md', '图片懒加载'],
             ['/blogs/js/优化/字体自适应一行展示.md', '字体自适应一行展示'],
+            ['/blogs/js/优化/任务切片.md', '任务切片'],
           ]
         },
         {
