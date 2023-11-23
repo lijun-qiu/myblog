@@ -61,7 +61,8 @@ module.exports = {
           { text: "vue", link: "/blogs/vue/" },
           { text: "js", link: "/blogs/js/" },
           { text: "thirdPartyPlugin ", link: "/blogs/third_party/" },
-          { text: "python", link: "/blogs/python/" }
+          { text: "python", link: "/blogs/python/" },
+          { text: "css", link: "/blogs/css/" },
         ],
       },
       {
@@ -86,6 +87,7 @@ module.exports = {
     ],
     sidebar: {
       "/docs/theme-reco/": ["", "blogbuild",'copy'],
+      "/blogs/css/": ["","图片渐隐消失之术"],
       "/blogs/js/": [
         {
           title: '功能',
