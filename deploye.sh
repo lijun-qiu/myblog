@@ -6,7 +6,7 @@ set -e
 git status
 git add .
 git status
-git commit -m 'css图片渐隐消失之术'
+git commit -m '图片懒加载之IntersectionObserver'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:lijun-qiu/myblog.git master
