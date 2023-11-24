@@ -84,6 +84,15 @@ categories:
 ````
 
 ### IntersectionObserver
+boundingClientRect：目标元素的矩形区域的信息
+intersectionRatio：表示目标元素的多少部分可见于视口，即intersectionRect占boundingClientRect的比例，完全可见时为1，完全不可见时小于等于0
+intersectionRect：目标元素与视口（或根元素）的交叉区域的信息
+isIntersecting：目标元素与根元素是否相交
+isVisible：Intersection Observer v2 引入的“可见性”的概念，若isVisible为true，即目标元素完全不被其他内容遮挡，并且没有应用会改变或扭曲其在屏幕上的显示的视觉效果,若为false则不能保证可见性（一般不用）
+rootBounds：根元素的矩形区域的信息， getBoundingClientRect()方法的返回值，如果没有根元素（即直接相对于视口滚动），则返回null
+target：被观察的目标元素，是一个 DOM 节点对象
+time：可见性发生变化的时间，是一个高精度时间戳，单位为毫秒
+
 ````js
  const imgs = document.querySelectorAll('[data-src]')
     const observer = new IntersectionObserver(entries => {
