@@ -7,9 +7,13 @@
     "build": "vuepress build ."
   },
   "devDependencies": {
+    "@vuepress/plugin-container": "^2.0.0-rc.0",
     "vuepress": "^1.9.7",
-    "vuepress-theme-reco": "1.6.17",
-    "vuepress-plugin-code-copy": "^1.0.6"
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-theme-reco": "1.6.17"
   },
-  "description": "y"
+  "description": "y",
+  "dependencies": {
+    "vuepress-plugin-demo-block": "^0.7.2"
+  }
 }

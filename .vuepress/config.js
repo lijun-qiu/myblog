@@ -39,7 +39,7 @@ module.exports = {
   title: "lijun's blog",
   description: "A simple and beautiful vuepress blog theme .",
   dest: "public",
-  base: '/lijun.github.io/',  //github地址
+  base: "/lijun.github.io/", //github地址
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     [
@@ -69,9 +69,9 @@ module.exports = {
         text: "Document",
         icon: "reco-message",
         items: [
-          { text: "个人文档", link: "/docs/theme-reco/" },  
-          { text: "shareWork", link: "/blogs/share-work/" }],
-        
+          { text: "个人文档", link: "/docs/theme-reco/" },
+          { text: "shareWork", link: "/blogs/share-work/" },
+        ],
       },
       {
         text: "GitHub",
@@ -86,73 +86,90 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/docs/theme-reco/": ["", "blogbuild",'copy'],
-      "/blogs/css/": ["","图片渐隐消失之术"],
+      "/docs/theme-reco/": ["", "blogbuild", "copy"],
+      "/blogs/css/": ["", "图片渐隐消失之术", "3D卡片反光闪烁动效"],
       "/blogs/js/": [
         {
-          title: '功能',
+          title: "功能",
           collapsable: true,
           children: [
-            ['/blogs/js/功能/js发布与订阅.md', 'js发布与订阅'],
-            ['/blogs/js/功能/封装storage.md', '封装storage'],
-            ['/blogs/js/功能/展开收起效果.md', 'css展开收起'],
-            ['/blogs/js/功能/文字向上轮播.md', '文字向上轮播'],
-          ]
+            ["/blogs/js/功能/js发布与订阅.md", "js发布与订阅"],
+            ["/blogs/js/功能/封装storage.md", "封装storage"],
+            ["/blogs/js/功能/展开收起效果.md", "css展开收起"],
+            ["/blogs/js/功能/文字向上轮播.md", "文字向上轮播"],
+          ],
         },
         {
-          title: '优化',
+          title: "优化",
           collapsable: true,
           children: [
-            ['/blogs/js/优化/图片懒加载.md', '图片懒加载'],
-            ['/blogs/js/优化/图片懒加载之IntersectionObserver.md', '图片懒加载之IntersectionObserver'],
-            ['/blogs/js/优化/字体自适应一行展示.md', '字体自适应一行展示'],
-            ['/blogs/js/优化/任务切片.md', '任务切片'],
-          ]
+            ["/blogs/js/优化/图片懒加载.md", "图片懒加载"],
+            [
+              "/blogs/js/优化/图片懒加载之IntersectionObserver.md",
+              "图片懒加载之IntersectionObserver",
+            ],
+            ["/blogs/js/优化/字体自适应一行展示.md", "字体自适应一行展示"],
+            ["/blogs/js/优化/任务切片.md", "任务切片"],
+          ],
         },
         {
-          title: '数组',
+          title: "数组",
           collapsable: true,
           children: [
-            ['/blogs/js/数组/js数组常用方法实现.md','js数组常用方法实现'],
-          ]
+            ["/blogs/js/数组/js数组常用方法实现.md", "js数组常用方法实现"],
+          ],
+        },
+        {
+          title: "第三方插件",
+          collapsable: true,
+          children: [["/blogs/js/第三方插件/d3js使用demo.md", "d3js使用demo"]],
         },
       ],
-      "/blogs/vue/": ["Vue开发技巧",'tree组件自身递归调用'],
-      "/blogs/third_party/": ["",'高德地图库使用demo'],
+      "/blogs/vue/": ["Vue开发技巧", "tree组件自身递归调用"],
+      "/blogs/third_party/": ["", "高德地图库使用demo"],
       "/blogs/python/": ["python将图片生成视频"],
       "/blogs/share-work/": [
         {
-          title: '1',
+          title: "1",
           collapsable: true,
           children: [
-            ['/blogs/share-work/1/Chrome_DevTools分享.md', 'Chrome_DevTools分享.md'],
-          ]
+            [
+              "/blogs/share-work/1/Chrome_DevTools分享.md",
+              "Chrome_DevTools分享.md",
+            ],
+          ],
         },
         {
-          title: '2',
+          title: "2",
           collapsable: true,
           children: [
-            ['/blogs/share-work/2/js分支优化分享.md', 'js分支优化分享.md'],
-          ]
+            ["/blogs/share-work/2/js分支优化分享.md", "js分支优化分享.md"],
+          ],
         },
         {
-          title: '3',
+          title: "3",
           collapsable: true,
           children: [
-            ['/blogs/share-work/3/will-change分享.md', 'will-change分享.md'],
-            ['/blogs/share-work/3/vue中动态引入图片require.md', 'vue中动态引入图片require.md'],
-            ['/blogs/share-work/3/问题.md', '问题.md'],
-          ]
+            ["/blogs/share-work/3/will-change分享.md", "will-change分享.md"],
+            [
+              "/blogs/share-work/3/vue中动态引入图片require.md",
+              "vue中动态引入图片require.md",
+            ],
+            ["/blogs/share-work/3/问题.md", "问题.md"],
+          ],
         },
         {
-          title: '4',
+          title: "4",
           collapsable: true,
           children: [
-            ['/blogs/share-work/4/share-work.md', 'share-work.md'],
-            ['/blogs/share-work/4/postMessage替换setTimeout.md', 'postMessage替换setTimeout.md'],
-          ]
+            ["/blogs/share-work/4/share-work.md", "share-work.md"],
+            [
+              "/blogs/share-work/4/postMessage替换setTimeout.md",
+              "postMessage替换setTimeout.md",
+            ],
+          ],
         },
-      ]
+      ],
     },
     type: "blog",
     // 博客设置
@@ -211,20 +228,32 @@ module.exports = {
     //   appId: '...',// your appId
     //   appKey: '...', // your appKey
     // }
+    mdEnhance: {
+      demo: true, //展示代码效果
+    },
   },
   // 监听文件变化并重新构建
   extraWatchFiles: [".vuepress/config.js", "../blogs/*.md"],
   markdown: {
     lineNumbers: true,
   },
+  head: [
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js' }],
+  ],
   plugins: [
-    ["vuepress-plugin-code-copy", {
-      align: 'top',
-      color: '#27b1ff',
-      backgroundTransition: true,
-      backgroundColor: '#0075b8',
-      successText: '复制成功'
-    }
-    ]
+    [
+      "vuepress-plugin-code-copy",
+      {
+        align: "top",
+        color: "#27b1ff",
+        backgroundTransition: true,
+        backgroundColor: "#0075b8",
+        successText: "复制成功",
+      },
+    ],
+    "demo-block"
   ],
 };
