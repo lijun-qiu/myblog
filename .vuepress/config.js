@@ -63,6 +63,7 @@ module.exports = {
           { text: "thirdPartyPlugin ", link: "/blogs/third_party/" },
           { text: "python", link: "/blogs/python/" },
           { text: "css", link: "/blogs/css/" },
+          { text: "git", link: "/blogs/git/" },
         ],
       },
       {
@@ -88,6 +89,7 @@ module.exports = {
     sidebar: {
       "/docs/theme-reco/": ["", "blogbuild", "copy"],
       "/blogs/css/": ["", "图片渐隐消失之术", "3D卡片反光闪烁动效"],
+      "/blogs/git/": ["", "github连接超时问题"],
       "/blogs/js/": [
         {
           title: "功能",

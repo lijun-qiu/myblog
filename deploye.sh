@@ -6,7 +6,7 @@ set -e
 git status
 git add .
 git status
-git commit -m '图片懒加载之IntersectionObserver'
+git commit -m 'github连接超时问题'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:lijun-qiu/myblog.git master
