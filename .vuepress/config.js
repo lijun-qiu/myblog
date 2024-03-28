@@ -89,7 +89,7 @@ module.exports = {
     sidebar: {
       "/docs/theme-reco/": ["", "blogbuild", "copy"],
       "/blogs/css/": ["", "图片渐隐消失之术", "3D卡片反光闪烁动效"],
-      "/blogs/git/": ["", "github连接超时问题"],
+      "/blogs/git/": ["", "github连接超时问题",'git命令'],
       "/blogs/js/": [
         {
           title: "功能",
@@ -99,6 +99,7 @@ module.exports = {
             ["/blogs/js/功能/封装storage.md", "封装storage"],
             ["/blogs/js/功能/展开收起效果.md", "css展开收起"],
             ["/blogs/js/功能/文字向上轮播.md", "文字向上轮播"],
+            ["/blogs/js/功能/轮播图.md", "轮播图"],
           ],
         },
         {
@@ -169,6 +170,13 @@ module.exports = {
               "/blogs/share-work/4/postMessage替换setTimeout.md",
               "postMessage替换setTimeout.md",
             ],
+          ],
+        },
+        {
+          title: "5",
+          collapsable: true,
+          children: [
+            ["/blogs/share-work/5/分享.md", "分享.md"],
           ],
         },
       ],

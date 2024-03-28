@@ -2,7 +2,7 @@
 title: github连接超时问题
 date: 2024-01-30
 tags:
- - js
+ - git
 categories:
  - github连接超时
 ---
@@ -42,4 +42,4 @@ ping github.com也显示超时
 199.232.68.133 cloud.githubusercontent.com
 140.82.113.6 api.github.com
 ```
-之后在命令窗口使用ipconfig刷新一下，我的就shunl解决了
+之后在命令窗口使用ipconfig刷新一下，我的就解决了
