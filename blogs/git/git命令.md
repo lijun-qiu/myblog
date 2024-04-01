@@ -16,5 +16,6 @@ git reset --hard origin/master
 ## 2回退分支
 git log
 git reset --hard  6e4b13c58b48e874f3c76fdbd7400a71d3cd0b5d
+git push --force //强制提交
 
 找到最近提交的分支回退
