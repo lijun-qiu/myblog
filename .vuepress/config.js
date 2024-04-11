@@ -64,6 +64,7 @@ module.exports = {
           { text: "python", link: "/blogs/python/" },
           { text: "css", link: "/blogs/css/" },
           { text: "git", link: "/blogs/git/" },
+          { text: "miniProgram", link: "/blogs/miniProgram/" },
         ],
       },
       {
@@ -128,6 +129,7 @@ module.exports = {
           children: [["/blogs/js/第三方插件/d3js使用demo.md", "d3js使用demo"]],
         },
       ],
+      "/blogs/miniProgram/":['uniapp签名实现','小程序'],
       "/blogs/vue/": ["Vue开发技巧", "tree组件自身递归调用"],
       "/blogs/third_party/": ["", "高德地图库使用demo"],
       "/blogs/python/": ["python将图片生成视频"],
