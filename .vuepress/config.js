@@ -89,7 +89,7 @@ module.exports = {
     ],
     sidebar: {
       "/docs/theme-reco/": ["", "blogbuild", "copy"],
-      "/blogs/css/": ["", "图片渐隐消失之术", "3D卡片反光闪烁动效"],
+      "/blogs/css/": ["", "图片渐隐消失之术", "3D卡片反光闪烁动效","自定义导航栏"],
       "/blogs/git/": ["", "github连接超时问题",'git命令'],
       "/blogs/js/": [
         {
