@@ -88,7 +88,7 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/docs/theme-reco/": ["", "blogbuild", "copy"],
+      "/docs/theme-reco/": ["", "blogbuild", "copy","运行vue代码实例"],
       "/blogs/css/": ["", "图片渐隐消失之术", "3D卡片反光闪烁动效","自定义导航栏"],
       "/blogs/git/": ["", "github连接超时问题",'git命令'],
       "/blogs/js/": [
@@ -267,6 +267,13 @@ module.exports = {
         successText: "复制成功",
       },
     ],
-    "demo-block"
+    "demo-block",
+    [
+      'run', 
+      {
+        jsLabs: ['https://unpkg.com/element-ui/lib/index.js'],
+        cssLabs: ['https://unpkg.com/element-ui/lib/theme-chalk/index.css'],
+      }
+    ]
   ],
 };
