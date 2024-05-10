@@ -1,5 +1,5 @@
 ---
-title: 小程序签名
+title: uni小程序签名
 date: 2024-04-09
 tags:
  - uniapp
