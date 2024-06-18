@@ -133,7 +133,7 @@ module.exports = {
       "/blogs/miniProgram/":['uni签名','头条优化','原生小程序转uni'],
       "/blogs/vue/": ["Vue开发技巧", "tree组件自身递归调用"],
       "/blogs/third_party/": ["", "高德地图库使用demo"],
-      "/blogs/python/": ["python将图片生成视频"],
+      "/blogs/python/": ["python将图片生成视频",'nodejs搭建连接数据库'],
       "/blogs/share-work/": [
         {
           title: "1",

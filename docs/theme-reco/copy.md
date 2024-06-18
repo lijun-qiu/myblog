@@ -32,7 +32,7 @@ $ yarn add vuepress-plugin-code-copy
 ```
 
 ## 3效果
-![avatar](../../.vuepress/public/imgs/addcopy.png)
+![avatar](../../.vuepress/public/imgs/other/addcopy.png)
 
 ## 4详细配置解析
 ```js

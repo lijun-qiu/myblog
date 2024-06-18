@@ -29,7 +29,7 @@ categories:
 
 
 ##  1. <a name=''></a>近期工作中遇到一个鼠标悬浮弹框问题如下
-![avatar](../../../.vuepress/public/imgs/webshare1.png)
+![avatar](../../../.vuepress/public/imgs/other/webshare1.png)
 此时有个坑就是如果直接设置移入移出事件，那么在弹框和遮罩出来的时候，就直接执行移除事件了
 ##  2. <a name='-1'></a>解决方法：
 ###  2.1. <a name='-1'></a>1将绑定事件元素层级设置在悬浮层之上，此时元素比较明显可以再加个透明度让它看起来像是在遮罩层下面
@@ -121,7 +121,7 @@ export default function useMousePosition() {
 
 ##  3. <a name='Command'></a>命令（Command） 菜单 🏈
 按Cmd + Shift + P（如果使用Windows，则按Ctrl + Shift + P）打开“命令”菜单。
-![avatar](../../../.vuepress/public/imgs/chrome_dev.png)
+![avatar](../../../.vuepress/public/imgs/other/chrome_dev.png)
 
 ##  4. <a name='DOM'></a>截图DOM元素 🏉
 ###  4.1. <a name='CapturefullsizeScreenshot'></a>1截取整个页面 Capture full size Screenshot,并不只是页面可视区域，而是包含滚动条在内的所有页面内容
@@ -130,16 +130,16 @@ export default function useMousePosition() {
 ##  5. <a name='xhr'></a>重新发起xhr请求 🚀
 在平时和后端联调时，我们用的最多的可能就是Network面板了。但是每次想重新查看一个请求，我们往往都是通过刷新页面、点击按钮等方式去触发xhr请求，这种方式有时显得会比较麻烦，我们可以通过google提供的Replay XHR的方式去发起一条新的请求，这样对于我们开发效率的提升是有所帮助的。
 
-![avatar](../../../.vuepress/public/imgs/replayxhr.png)
+![avatar](../../../.vuepress/public/imgs/other/replayxhr.png)
 
 ##  6. <a name='-1'></a>编辑页面上的任何文本 ✍
 在控制台输入document.body.contentEditable="true"或者document.designMode = 'on'就可以实现对网页的编辑了。
 
 ##  7. <a name='0'></a>使用$0快速访问选中的元素
-![avatar](../../../.vuepress/public/imgs/$0cmd.png)
+![avatar](../../../.vuepress/public/imgs/other/$0cmd.png)
 
 ##  8. <a name='DevTools'></a> 使用DevTools作为代码编辑器
-![avatar](../../../.vuepress/public/imgs/codeedit.png)
+![avatar](../../../.vuepress/public/imgs/other/codeedit.png)
 
 ##  9. <a name='-1'></a>动画检查 🎏
 DevTools 中有一个动画面板，默认情况下它是关闭的，很多人可能不太清楚这个功能。它可以让你控制和操纵 CSS 动画，并且可视化这些动画是如何工作的。
@@ -164,11 +164,11 @@ DevTools 中有一个动画面板，默认情况下它是关闭的，很多人�
 ````
 ##  11. <a name='table'></a>table 🦐
 Devtools提供的用于将对象数组记录为表格的API:
-![avatar](../../../.vuepress/public/imgs/tabletest.png)
+![avatar](../../../.vuepress/public/imgs/other/tabletest.png)
 类似的还有copy(),save()等等
 
 ##  12. <a name='CSSJS'></a>CSS/JS 覆盖率 ✅
 Chrome DevTools 中的Coverage功能可以帮助我们查看代码的覆盖率。
 打开方式
 打开调试面板，用快捷键 shift+command+P （mac）输入 Show Coverage调出相应面板
-![avatar](../../../.vuepress/public/imgs/checkcssjs.png)
+![avatar](../../../.vuepress/public/imgs/other/checkcssjs.png)

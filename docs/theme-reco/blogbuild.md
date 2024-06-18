@@ -101,7 +101,7 @@ base:'/lijun.github.io/',
 
 ### 2设置pages
 
-![avatar](../../.vuepress/public/imgs/buildblog.png)
+![avatar](../../.vuepress/public/imgs/other/buildblog.png)
 <p style="color:red;">此时访问地址<https://lijun-qiu.github.io/lijun.github.io/>就能看到效果</p>
 
 ## 自动提交github
