@@ -1,6 +1,6 @@
 ---
 title: nodejs搭建连接数据库
-date: 2023-04-23
+date: 2024-06-18
 tags:
  - nodejs
 categories:
@@ -104,13 +104,13 @@ nodemon主要用于开发环境，而pm2则更适用于生产环境，它提供�
 ## 连接mysql数据库
 1安装数据库驱动：根据你使用的数据库类型，选择合适的数据库驱动，如mysql、mongodb等，并使用npm安装它。例如，如果你使用MySQL数据库，可以运行以下命令安装mysql驱动：
 ```js
-npm install mysql
+npm install mysql2
 ```
 2引入数据库驱动：在你的代码中引入适当的数据库驱动。例如，如果你使用mysql驱动，可以在代码中添加以下行：  
 3创建数据库连接：根据数据库的连接配置，创建一个数据库连接。例如，对于MySQL数据库，你可以使用以下代码创建一个数据库连接：  
 4编写查询代码：使用数据库连接对象执行你的查询代码。以下是一个简单的示例，查询一个名为users的表中的所有数据：
 ```js
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',

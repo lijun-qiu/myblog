@@ -89,7 +89,7 @@ module.exports = {
     ],
     sidebar: {
       "/docs/theme-reco/": ["", "blogbuild", "copy","运行vue代码实例"],
-      "/blogs/css/": ["", "图片渐隐消失之术", "3D卡片反光闪烁动效","自定义导航栏"],
+      "/blogs/css/": ["", "图片渐隐消失之术", "3D卡片反光闪烁动效","自定义导航栏",'纯css实现显示超出数量'],
       "/blogs/git/": ["", "github连接超时问题",'git命令'],
       "/blogs/js/": [
         {
@@ -115,6 +115,7 @@ module.exports = {
             ],
             ["/blogs/js/优化/字体自适应一行展示.md", "字体自适应一行展示"],
             ["/blogs/js/优化/任务切片.md", "任务切片"],
+            ["/blogs/js/优化/劫持Promise.md", "劫持Promise"],
           ],
         },
         {
@@ -180,6 +181,13 @@ module.exports = {
           collapsable: true,
           children: [
             ["/blogs/share-work/5/分享.md", "分享.md"],
+          ],
+        },
+        {
+          title: "6",
+          collapsable: true,
+          children: [
+            ["/blogs/share-work/6/分享.md", "分享.md"],
           ],
         },
       ],
