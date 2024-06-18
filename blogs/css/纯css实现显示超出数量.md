@@ -7,7 +7,7 @@ categories:
  - 纯css实现显示超出数量
 ---
 ## 纯 CSS 实现多标签自动显示超出数量
-![avatar](../../.vuepress/public/imgs/share/css-demo.gif)
+![avatar](../../.vuepress/public/imgs/css/css-demo.gif)
 ```js
 <!DOCTYPE html>
 <html lang="en">
