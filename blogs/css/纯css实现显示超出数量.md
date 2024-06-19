@@ -1,6 +1,6 @@
 ---
 title: 纯css实现显示超出数量
-date: 2024-04-24
+date: 2024-06-19
 tags:
  - css
 categories:

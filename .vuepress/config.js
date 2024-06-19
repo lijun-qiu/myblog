@@ -102,6 +102,8 @@ module.exports = {
             ["/blogs/js/功能/文字向上轮播.md", "文字向上轮播"],
             ["/blogs/js/功能/轮播图.md", "轮播图"],
             ["/blogs/js/功能/悬浮隐藏加拖动.md", "悬浮隐藏加拖动"],
+            ["/blogs/js/功能/h5下拉刷新.md", "h5下拉刷新"],
+            ["/blogs/js/功能/简易gpt.md", "简易gpt"],
           ],
         },
         {
