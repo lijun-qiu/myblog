@@ -61,6 +61,7 @@ module.exports = {
           { text: "vue", link: "/blogs/vue/" },
           { text: "js", link: "/blogs/js/" },
           { text: "thirdPartyPlugin ", link: "/blogs/third_party/" },
+          { text: "webpack", link: "/blogs/webpack/" },
           { text: "python", link: "/blogs/python/" },
           { text: "css", link: "/blogs/css/" },
           { text: "git", link: "/blogs/git/" },
@@ -90,7 +91,6 @@ module.exports = {
     sidebar: {
       "/docs/theme-reco/": ["", "blogbuild", "copy","运行vue代码实例"],
       "/blogs/css/": ["", "图片渐隐消失之术", "3D卡片反光闪烁动效","自定义导航栏",'纯css实现显示超出数量','css三行动态显示展开收起','字体超出中间...隐藏'],
-      "/blogs/git/": ["", "github连接超时问题",'git命令'],
       "/blogs/js/": [
         {
           title: "功能",
@@ -135,6 +135,8 @@ module.exports = {
       ],
       "/blogs/miniProgram/":['uni签名','头条优化','原生小程序转uni'],
       "/blogs/vue/": ["Vue开发技巧", "tree组件自身递归调用"],
+      "/blogs/webpack/":['webpack打包自动上传'],
+      "/blogs/git/": ["", "github连接超时问题",'git命令'],
       "/blogs/third_party/": ["", "高德地图库使用demo"],
       "/blogs/python/": ["python将图片生成视频",'nodejs搭建连接数据库'],
       "/blogs/share-work/": [
