@@ -194,6 +194,13 @@ module.exports = {
             ["/blogs/share-work/6/分享.md", "分享.md"],
           ],
         },
+        {
+          title: "7",
+          collapsable: true,
+          children: [
+            ["/blogs/share-work/7/分享.md", "分享.md"],
+          ],
+        },
       ],
     },
     type: "blog",
