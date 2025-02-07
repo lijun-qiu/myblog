@@ -59,6 +59,7 @@ module.exports = {
         text: "Blog",
         items: [
           { text: "vue", link: "/blogs/vue/" },
+          { text: "react", link: "/blogs/react/" },
           { text: "js", link: "/blogs/js/" },
           { text: "thirdPartyPlugin ", link: "/blogs/third_party/" },
           { text: "webpack", link: "/blogs/webpack/" },
@@ -135,6 +136,7 @@ module.exports = {
       ],
       "/blogs/miniProgram/":['uni签名','头条优化','原生小程序转uni'],
       "/blogs/vue/": ["Vue开发技巧", "tree组件自身递归调用"],
+      "/blogs/react/": ["", 'react实现一个公司结构树'],
       "/blogs/webpack/":['webpack打包自动上传'],
       "/blogs/git/": ["", "github连接超时问题",'git命令'],
       "/blogs/third_party/": ["", "高德地图库使用demo"],
