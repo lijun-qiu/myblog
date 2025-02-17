@@ -131,7 +131,10 @@ module.exports = {
         {
           title: "第三方插件",
           collapsable: true,
-          children: [["/blogs/js/第三方插件/d3js使用demo.md", "d3js使用demo"]],
+          children: [
+            ["/blogs/js/第三方插件/d3js使用demo.md", "d3js使用demo"],
+            ["/blogs/js/第三方插件/puppeteer生成pdf目录", "puppeteer生成pdf目录"]
+        ],
         },
       ],
       "/blogs/miniProgram/":['uni签名','头条优化','原生小程序转uni'],
