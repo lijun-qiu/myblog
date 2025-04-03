@@ -589,3 +589,73 @@ export default {
  <component :is="currentComp" :key="componentKey"></component>
 ```
 总结来说，component 是 Vue 中实现动态组件的强大工具，结合 is 属性和 keep-alive，可以灵活地控制组件的动态渲染和状态保持。
+
+# 4.Vue Watch API 详解
+Watch API 的几种方法  
+1. watchEffect()  
+执行时机：立即执行，并自动追踪内部响应式依赖  
+特点：  
+第一个参数是一个副作用函数，会立即执行并建立依赖追踪  
+当依赖变化时，副作用函数会重新执行  
+不需要明确指定要监听的数据  
+2. watchPostEffect()  
+本质上是 watchEffect() 使用 flush: 'post' 选项的别名  
+执行时机：组件更新后执行，可以访问更新后的 DOM  
+3. watchSyncEffect()  
+本质上是 watchEffect() 使用 flush: 'sync' 选项的别名  
+执行时机：同步执行，依赖变化时立即触发  
+4. watch()  
+特点：  
+侦听一个或多个响应式数据源，并在数据源变化时调用回调函数  
+更明确地控制什么状态应该触发侦听器重新运行  
+可以访问被侦听状态的前一个值和当前值  
+配置选项说明  
+参数：  
+参数1：要监听的响应式数据源  
+参数2：当数据源变化时要调用的回调函数  
+参数3：可选配置，支持 immediate、deep、flush、onTrack、onTrigger 等选项  
+immediate: 设置为 true 时，侦听器创建时立即执行一次  
+deep: 设置为 true 时，深度监听对象内部的变化  
+flush: 控制回调的调用时机  
+'pre'：组件更新前调用（默认）  
+'post'：组件更新后调用  
+'sync'：同步调用  
+onTrack/onTrigger: 用于调试，跟踪依赖收集和触发过程  
+```js
+   // 明确指定要监听的属性，并使用调试选项
+    watch(
+      // 指定监听 user.name 和 user.profile.age
+      [() => user.name, () => user.profile.age, counter],
+      ([newName, newAge, newCounter], [oldName, oldAge, oldCounter]) => {
+        console.log(`名字: ${oldName} -> ${newName}`)
+        console.log(`年龄: ${oldAge} -> ${newAge}`)
+        console.log(`计数器: ${oldCounter} -> ${newCounter}`)
+      },
+      {
+        // 调试选项
+        onTrack(event) {
+          // 这里会显示具体追踪了哪个属性
+          console.log('追踪依赖:', event.target, event.key)
+        },
+        onTrigger(event) {
+          // 这里会显示具体是哪个属性的变化触发了回调
+          console.log('触发更新:', event.target, event.key, 
+                     `${event.oldValue} -> ${event.newValue}`)
+        }
+      }
+    )
+    
+```
+使用场景  
+watchEffect: 适合简单的副作用逻辑，不需要区分旧值和新值  
+```js
+// watchEffect 会自动追踪内部使用的响应式属性
+watchEffect(() => {
+  console.log(`Count: ${count.value}, Name: ${name.value}`)
+  // 这里会自动追踪 count 和 name
+})
+```
+watchPostEffect: 需要在 DOM 更新后执行操作时使用  
+watchSyncEffect: 需要立即响应数据变化时使用  
+watch: 需要比较数据变化前后的值，或需要更精确控制监听行为时使用  
+这些 API 为 Vue 应用提供了灵活的响应式数据监听能力，可以根据不同的场景选择最合适的方法。  
