@@ -105,6 +105,7 @@ module.exports = {
             ["/blogs/js/功能/悬浮隐藏加拖动.md", "悬浮隐藏加拖动"],
             ["/blogs/js/功能/h5下拉刷新.md", "h5下拉刷新"],
             ["/blogs/js/功能/简易gpt.md", "简易gpt"],
+            ["/blogs/js/功能/前端性能监控.md", "前端性能监控"],
           ],
         },
         {

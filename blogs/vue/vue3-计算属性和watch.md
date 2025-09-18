@@ -1,6 +1,6 @@
 ---
 title: Vue 3 computed与watch
-date: 2025-08-19
+date: 2025-07-19
 tags:
  - vue3
 categories:
@@ -95,7 +95,7 @@ state.user.name = 'Jane' // 触发 watch
 
 ---
 
-## ⚖️ Watch 与计算属性的区别
+## Watch 与计算属性的区别
 
 ### 1. 用途和目的
 
@@ -183,7 +183,7 @@ stop() // 停止监听
 
 ---
 
-## 🧠 ReactiveEffect 核心概念
+## ReactiveEffect 核心概念
 
 ### 什么是 ReactiveEffect？
 
@@ -325,7 +325,7 @@ count.value = 1
 
 ---
 
-## 🎯 实际应用场景对比
+## 实际应用场景对比
 
 ### 1. 计算属性适用场景
 
@@ -397,7 +397,7 @@ watch(settings, (newSettings) => {
 
 ---
 
-## ⚡ 性能对比
+## 性能对比
 
 ### 1. 计算属性性能优势
 
@@ -429,7 +429,7 @@ watch(count, debounce((newVal) => {
 
 ---
 
-## 🚀 高级用法
+## 高级用法
 
 ### 1. 监听多个源
 
@@ -512,7 +512,7 @@ count.value = 1 // 不会执行，因为 effect 已停止
 
 ---
 
-## 🔧 在 Vue 3 中的应用
+## 在 Vue 3 中的应用
 
 ### 1. 计算属性
 ```js
@@ -552,7 +552,7 @@ watchEffect(() => {
 
 ---
 
-## 📝 总结
+## 总结
 
 ### 选择原则
 
